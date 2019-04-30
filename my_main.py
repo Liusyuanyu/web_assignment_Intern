@@ -30,7 +30,7 @@ news_scrap.read_webpage_from_html()
 news_scrap.convert_data_to_bs4()
 da_list = news_scrap.scrap_links(count=10)
 
-filepath = 'html/my_file.html'
+filepath = 'html/my_scraped_result.html'
 
 link_list = {'TNW: artificial-intelligence': ai_list}
 link_list['TNW: smart phone'] = sp_list
