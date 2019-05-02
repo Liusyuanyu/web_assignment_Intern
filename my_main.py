@@ -48,7 +48,7 @@ goto_da = "<H4><a href=\"" + da_page+"\">Go to Data Aalysis</a></H4>"
 with open(smart_phone_path, 'w') as fobj:
     title = str("<BODY><H3> TNW: smart phone </H3>")
     fobj.write(title)
-    for tag in ai_list:
+    for tag in sp_list:
         fobj.write(str(tag.prettify()))
         fobj.write("<br/>")
     fobj.write(back_home)
@@ -56,7 +56,7 @@ with open(smart_phone_path, 'w') as fobj:
 with open(da_path, 'w') as fobj:
     title = str("<BODY><H3> TNW: data-analysis</H3>")
     fobj.write(title)
-    for tag in sp_list:
+    for tag in da_list:
         fobj.write(str(tag.prettify()))
         fobj.write("<br/>")
     fobj.write(back_home)
@@ -64,7 +64,7 @@ with open(da_path, 'w') as fobj:
 with open(homepath, 'w') as fobj:
     title = str("<BODY><H3> TNW: artificial-intelligence </H3>")
     fobj.write(title)
-    for tag in da_list:
+    for tag in ai_list: 
         fobj.write(str(tag.prettify()))
         fobj.write("<br/>")
     fobj.write(goto_smartphone)
