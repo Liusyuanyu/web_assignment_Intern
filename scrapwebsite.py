@@ -62,17 +62,16 @@ class NewsScraper:
                 count -=1
         return link_list
     
-    def write_result_as_html(self, filepath=filepath, links={}):
-        try:
-            if links :
-                # fobj.write(data)
-                with open(filepath, 'w') as fobj:
-                    for name, link_list in links.items():
-                        title = str("<BODY><H3>" + name + "</H3>")
-                        fobj.write(title)
-                        for tag in link_list:
-                            fobj.write(str(tag.prettify()))
-                            fobj.write("<br/>")
-        except Exception as e:
-            print(e)
-            self.__wlog.report(str(e))
+    # def write_result_as_html(self, filepath=filepath, links={}):
+        # try:
+            # if links :
+                # with open(filepath, 'w') as fobj:
+                    # for name, link_list in links.items():
+                        # title = str("<BODY><H3>" + name + "</H3>")
+                        # fobj.write(title)
+                        # for tag in link_list:
+                            # fobj.write(str(tag.prettify()))
+                            # fobj.write("<br/>")
+        # except Exception as e:
+            # print(e)
+            # self.__wlog.report(str(e))
